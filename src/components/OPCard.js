@@ -5,7 +5,7 @@ function OPCard({card: {age, altImage, bio, weapon, episode, quote, id, name, im
     return (
         <>
          <div className="container">
-         <h4>{name}</h4>
+         {/* <h4>{name}</h4> */}
         <li className = "card">
         <img src = {image} alt = {altImage} />
         <ul>Name: {name}</ul>
