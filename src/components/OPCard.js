@@ -1,25 +1,54 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function OPCard({card: {age, altImage, bio, weapon, episode, quote, id, name, image}}) {
 
+const [flipCards, setFlipCards] = useState(true)
+
+function handleClick () {
+
+ setFlipCards((currentSide)=> !currentSide)
+
+}
+
+
+
     return (
         <>
-         <div className="container">
-         {/* <h4>{name}</h4> */}
+        {flipCards ? (
+         <div className="container" onClick = {handleClick}>
         <li className = "card">
-        <img src = {image} alt = {altImage} />
+        <img src = {image} alt = "" />
+        <br></br>
+        <br></br>
         <ul>Name: {name}</ul>
         <br></br>
-        <ul>Bio: {bio}</ul>
+        <ul>Age: {age}</ul>
         <br></br>
         <ul>quote: {quote}</ul>
         </li>
        
         </div>
-        </>
-    )
+       
+
+    ) : (
+    <div className="container" onClick = {handleClick}>
+   
+   <li className = "card">
     
-    }
+   <img src = {altImage} alt = "" />
+   <br></br>
+   <br></br>
+   <ul>Bio: {bio}</ul>
+   <br></br>
+   <ul>Weapon: {weapon}</ul>
+   <br></br>
+   <ul>Episode: {episode}</ul>
+   </li>
+  
+   </div>
+    )}
+</>
+)}
 
 
 
