@@ -1,9 +1,30 @@
+import { useState, useEffect } from "react";
 import OPCard from "./OPCard";
+
 
 function OPContainer() {
 
+const [cards, setCards] = useState([])
+
+useEffect(getOpCards, [])
+
+function getOpCards() {
+
+fetch('http://localhost:3000/OP-Characters')
+.then(res => res.json())
+.then(setCards)
+ 
+
+}
+
+const cardsMap = cards.map((card) => { 
+
+    return <OPCard  key = {card.id} card = {card} /> 
+    
+})
+
 return (
-    <div></div>
+    <ul className="cards">{cardsMap}</ul>
 )
 
 }

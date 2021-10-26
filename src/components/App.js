@@ -4,8 +4,15 @@ import NewOPForm from './NewOPForm'
 import OPContainer from './OPContainer'
 
 function App() {
+
   return (
-    <div></div>
+
+    <div className = "App">
+    <Header/>
+    <NewOPForm/>
+    <OPContainer/>
+    
+    </div>
         
   )  
 }
