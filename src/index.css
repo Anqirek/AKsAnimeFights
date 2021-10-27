@@ -22,7 +22,8 @@ h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 50px;
   word-spacing: 15px;
-   }
+  box-shadow: 0px 10px 15px 5px rgb(0, 0, 0);
+}
 
 p {
    font-family: inherit;
@@ -30,21 +31,22 @@ p {
 
 img {
   margin: center;
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 200px;
   border: solid;
   border-color: black;
   border-radius: 8px;
+  box-shadow: 0px 10px 15px 5px rgb(0, 0, 0);
 }
 
  .card {
-  background-image:url("");
+  background-color:silver;
   background-repeat: no-repeat;
   background-size: cover;
   border: 5px outset #070703; 
   border-radius: 10px;
   padding: 50px;
-  box-shadow: 0 4px 8px 0 rgb(247, 242, 242);
+  box-shadow: 0px 10px 15px 5px rgb(0, 0, 0);
   transition: 0.3s;
   justify-content: wrap;
   /* margin: 30px; */

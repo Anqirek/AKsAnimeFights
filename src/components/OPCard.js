@@ -17,14 +17,14 @@ function handleClick () {
         {flipCards ? (
          <div className="container" onClick = {handleClick}>
         <li className = "card">
-        <img src = {image} alt = "" />
+        <img src = {image} alt = {altImage} />
         <br></br>
         <br></br>
         <ul>Name: {name}</ul>
         <br></br>
         <ul>Age: {age}</ul>
         <br></br>
-        <ul>quote: {quote}</ul>
+        <ul>Quote: {quote}</ul>
         </li>
        
         </div>
