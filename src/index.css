@@ -1,13 +1,117 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDAqWjFDtO58MXnINfe9M--fKCI1_67cufQQ&usqp=CAU");
+  background-size: auto;
+  background-repeat: repeat;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  /* margin: 0 auto; */
+  color: rgba(241, 241, 231, 0.801);  
+  padding: 14px 20px;
+  margin: 8px 8px;
+  /* margin-left: 15px; */
+  border: 5px outset #49493a; ;
+  border-radius: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+  word-spacing: 15px;
+  text-align: center;
+  box-shadow: 0px 10px 15px 0px rgb(189, 175, 175);
 }
+
+
+
+img {
+  margin: center;
+  height: 200px;
+  width: 200px;
+  border: solid;
+  border-color: black;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px 5px rgb(0, 0, 0);
+}
+
+ .card {
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBm0twMPC4yG8LL6N2HgJAdvUQjL_IsE0QNA&usqp=CAU");
+  background-blend-mode: saturation;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px outset #49493a; 
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0px 10px 15px 0px rgb(189, 175, 175);
+  transition: 0.3s;
+  justify-content: wrap;
+  float: left;
+  text-align: center;
+  width: 300px;
+  height: 380px;
+  text-emphasis: bold;
+  margin-left: auto;
+  padding: 15px 20px;
+  margin: 15px 15px;
+  list-style-type: none;
+  color:white;
+  align-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+
+  
+}
+card-id-1{
+background-color: silver;
+}
+
+.cards:hover {
+  box-shadow: 0 8px 16px 0 (219, 48, 48, 0.685);
+}
+/* 
+.anim{
+  -webkit-animation: myfirst 1s;
+  animation: myfirst 1s;
+} */
+
+/* #donate {
+   border-radius: 15px;
+   padding: 10px;
+   background-color: rgba(228, 218, 195, 0.479);
+   border: 10px, black,outset;
+   font-family: fantasy, bold;
+   font-size: 16px;
+   box-shadow: 0 10px 15px 0 rgb(0, 0, 0);
+} */
+
+/* #description {
+  display: center;
+  justify-content: center;
+  overflow-wrap: center;
+} */
+
+/* #form_area {
+  text-align: center;
+  flex-wrap: center;
+  color: white;  
+  padding: 70px 0px;
+  margin: auto;
+  cursor: pointer;
+  border: solid;
+  border-color: rgba(143, 133, 76, 0.829);
+  border-radius: 4px;
+  font-family: luminari, fantasy;
+  font-size: 19px;
+  width: 200px;
+  height: 200px;
+  border:center;
+} */
+
+/* #submit {
+  background-image: url("");
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgba(228, 218, 195, 0.842);
+  border: 10px, black,outset;
+  font-family: fantasy, bold;
+  font-size: 16px;
+  box-shadow: 0 10px 15px 0 rgb(241, 235, 235); 
+}     
+   */
