@@ -1,4 +1,5 @@
 body {
+
   background-image: url();
   background-size: auto;
   background: rgb(34,33,37);
@@ -15,12 +16,30 @@ header {
   margin: 8px 8px;
   /* margin-left: 15px; */
   border: 5px outset #0c0c0a; ;
+
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDAqWjFDtO58MXnINfe9M--fKCI1_67cufQQ&usqp=CAU");
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+header {
+  /* margin: 0 auto; */
+  color: rgba(241, 241, 231, 0.801);  
+  padding: 14px 20px;
+  margin: 8px 8px;
+  /* margin-left: 15px; */
+  border: 5px outset #49493a; ;
+
   border-radius: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 25px;
   word-spacing: 15px;
   text-align: center;
+
   box-shadow: 0px 10px 15px 0px rgb(248, 244, 244);
+
+  box-shadow: 0px 10px 15px 0px rgb(189, 175, 175);
+
 }
 
 
@@ -36,6 +55,7 @@ img {
 }
 
  .card {
+
   background-color:grey;
   background-repeat: no-repeat;
   background-size:400px 500px ;
@@ -43,20 +63,37 @@ img {
   border-radius: 10px;
   padding: 50px;
   box-shadow: 0px 10px 20px 0px rgb(243, 238, 238);
+
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBm0twMPC4yG8LL6N2HgJAdvUQjL_IsE0QNA&usqp=CAU");
+  background-blend-mode: saturation;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px outset #49493a; 
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0px 10px 15px 0px rgb(189, 175, 175);
+
   transition: 0.3s;
   justify-content: wrap;
   float: left;
   text-align: center;
   width: 300px;
-  height: 420px;
+  height: 380px;
   text-emphasis: bold;
+
   margin: 20px 20px;
   padding: 10px 20px;
   /* margin: 25px 25px,center; */
+
+  margin-left: auto;
+  padding: 15px 20px;
+  margin: 15px 15px;
+
   list-style-type: none;
   color:white;
   align-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
  
 
   
@@ -88,6 +125,14 @@ altImage{
   border-radius: 8px;
   box-shadow: 0px 10px 15px 5px rgb(0, 0, 0);
 
+
+
+  
+
+  
+}
+card-id-1{
+background-color: silver;
 
 }
 
@@ -158,4 +203,4 @@ altImage{
   font-size: 16px;
   box-shadow: 0 10px 15px 0 rgb(241, 235, 235); 
 }     
-   */
+   

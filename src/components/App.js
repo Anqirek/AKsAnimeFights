@@ -1,9 +1,11 @@
+
 import React , {useState} from 'react';
 import Header from './Header'
 import NewOPForm from './NewOPForm'
 import OPContainer from './OPContainer'
 import OPCharacterInfo from './OPCharacterInfo'
 import {Switch, Route} from 'react-router-dom'
+
 
 
 function App() {
@@ -30,7 +32,7 @@ const [page, setPage] = useState("/")
       </Route>
   </Switch>
     
-    </div>
+
         
   )  
 }

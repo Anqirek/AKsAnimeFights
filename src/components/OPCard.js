@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 
@@ -8,11 +9,13 @@ function OPCard({card: {age, altImage, bio, weapon, episode, quote, id, name, im
 
 let history = useHistory() 
 
+
 const charRedirect = () => {
 
 history.push('./OPCharacterInfo')
 
 }
+
 
     return (
         <>
@@ -32,6 +35,8 @@ history.push('./OPCharacterInfo')
        
 </>
 )}
+
+
 
 
 

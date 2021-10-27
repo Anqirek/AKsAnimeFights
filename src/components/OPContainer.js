@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import OPCard from "./OPCard";
-
+import OPCharacterInfo from "./OPCharacterInfo";
 
 function OPContainer() {
 
 const [cards, setCards] = useState([])
+
 
 useEffect(getOpCards, [])
 
@@ -19,12 +20,32 @@ fetch('http://localhost:3000/OP-Characters')
 
 const cardsMap = cards.map((card) => { 
 
-    return <OPCard  key = {card.id} card = {card} /> 
+    return <OPCard 
+     key = {card.id} 
+     card = {card} 
+     name = {card.name}
+     image = {card.image}
+     quote = {card.quote}
+     altImage = {card.altimage}
+     bio = {card.bio}
+     weapon = {card.weapon}
+     episode = {card.episode}
+     
+     
+     /> 
     
 })
 
+
+
+
 return (
+    <>
+    
     <ul className="cards">{cardsMap}</ul>
+
+   
+  </>
 )
 
 }
@@ -33,4 +54,3 @@ return (
 
 
 export default OPContainer;
-
