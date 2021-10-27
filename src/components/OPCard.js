@@ -13,7 +13,6 @@ history.push('./OPCharacterInfo')
 
 }
 
-
     return (
         <>
          <div className="container" onClick = {charRedirect}>
