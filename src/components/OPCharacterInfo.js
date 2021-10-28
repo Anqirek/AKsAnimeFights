@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function OPCharacterInfo({bio, weapon, altImage, episode, id}) {
+function OPCharacterInfo({bio, weapon, altImage, episode}) {
 
 
 

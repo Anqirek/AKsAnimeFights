@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 
+
 import { useHistory } from 'react-router-dom'
 
 
@@ -10,12 +11,12 @@ function OPCard({card: {age, altImage, bio, weapon, episode, quote, id, name, im
 
 let history = useHistory() 
 
+
 const charRedirect = () => {
 
 history.push('./OPCharacterInfo')
 
 }
-
 
 
     return (
@@ -39,4 +40,9 @@ history.push('./OPCharacterInfo')
 
 
 
+
+
 export default OPCard;
+
+
+

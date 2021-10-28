@@ -7,6 +7,7 @@ import OPCharacterInfo from './OPCharacterInfo';
 import {Switch, Route} from 'react-router-dom'
 
 
+
 function App() {
 
   const [selectChar, setSelectChar] = useState([])
@@ -35,8 +36,8 @@ function App() {
           </h1>
         </Route>
       </Switch>
-    
     </div>
+
         
   )  
 }
