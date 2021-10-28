@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import { useHistory } from 'react-router-dom'
 
 
+
+
 function OPCard({card: {age, altImage, bio, weapon, episode, quote, id, name, image}}) {
+
 
 let history = useHistory() 
 
@@ -12,6 +15,8 @@ const charRedirect = () => {
 history.push('./OPCharacterInfo')
 
 }
+
+
 
     return (
         <>
