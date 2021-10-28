@@ -5,9 +5,6 @@ function NewOPForm() {
 const [newChar, setNewChar] = useState("")
 
 
-    return (
-        <div></div>
-    )
     
     }
 

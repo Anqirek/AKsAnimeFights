@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 import { useHistory } from 'react-router-dom'
 
 
@@ -35,3 +36,6 @@ history.push('./OPCharacterInfo')
 
 
 export default OPCard;
+
+
+
