@@ -1,19 +1,48 @@
-import React from "react";
-import OPContainer from "./OPContainer";
-
-function OPCard() {
+import React, {useState} from 'react'
 
 
-return (
+import { useHistory } from 'react-router-dom'
 
-        <div></div>
-        
-    )
+
+
+
+function OPCard({card: {age, altImage, bio, weapon, episode, quote, id, name, image}}) {
+
+
+let history = useHistory() 
+
+
+const charRedirect = () => {
+
+history.push('./OPCharacterInfo')
+
 }
 
+
+    return (
+        <>
+         <div className="container" onClick = {charRedirect}>
+        <li className = "card" >
+        <img src = {image} alt = {altImage} />
+        <br></br>
+        <br></br>
+        <ul>Name: {name}</ul>
+        <br></br>
+        <ul>Age: {age}</ul>
+        <br></br>
+        <ul>Quote: {quote}</ul>
+        </li>
+       
+        </div>
+       
+</>
+)}
 
 
 
 
 
 export default OPCard;
+
+
+
