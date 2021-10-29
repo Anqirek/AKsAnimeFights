@@ -10,7 +10,6 @@ body {
 }
 
 header {
-  
   color: rgb(241, 241, 231);  
   padding: 20px 20px;
   margin: 8px 8px;
@@ -27,7 +26,7 @@ header {
   color: rgba(241, 241, 231, 0.801);  
   padding: 14px 20px;
   margin: 8px 8px;
-  /* margin-left: 15px; */
+  margin-left: 15px;
   border: 5px outset #49493a; ;
 
   border-radius: 10px;
@@ -38,7 +37,7 @@ header {
 
   box-shadow: 0px 10px 15px 0px rgb(248, 244, 244);
 
-  box-shadow: 0px 10px 15px 0px rgb(189, 175, 175);
+  
 
 }
 
@@ -54,6 +53,23 @@ img {
   box-shadow: 0px 10px 15px 5px rgb(0, 0, 0);
 }
 
+form {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDAqWjFDtO58MXnINfe9M--fKCI1_67cufQQ&usqp=CAU");
+  border: 5px outset #0c0c0a; ;
+  color: rgb(241, 241, 231);
+  text-align: wrap;
+  flex-wrap: wrap;
+  color: white;  
+  padding: 7px 0px;
+  margin: auto;
+  border: 5px outset #49493a; ;
+  word-break: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
+  
+  text-align: center;
+ 
+}
  .card {
 
   background-color:grey;
@@ -63,7 +79,6 @@ img {
   border-radius: 10px;
   padding: 50px;
   box-shadow: 0px 10px 20px 0px rgb(243, 238, 238);
-
   background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBm0twMPC4yG8LL6N2HgJAdvUQjL_IsE0QNA&usqp=CAU");
   background-blend-mode: saturation;
   background-repeat: no-repeat;
@@ -72,23 +87,18 @@ img {
   border-radius: 10px;
   padding: 50px;
   box-shadow: 0px 10px 15px 0px rgb(189, 175, 175);
-
   transition: 0.3s;
   justify-content: wrap;
   float: left;
   text-align: center;
   width: 300px;
-  height: 380px;
+  height: 420px;
   text-emphasis: bold;
-
   margin: 20px 20px;
   padding: 10px 20px;
-  /* margin: 25px 25px,center; */
-
   margin-left: auto;
   padding: 15px 20px;
   margin: 15px 15px;
-
   list-style-type: none;
   color:white;
   align-content: center;
@@ -104,7 +114,7 @@ img {
   float: fixed;
   text-align: center;
   width: 300px;
-  height: 380px;
+  height: 400px;
   text-emphasis: bold;
   margin-left: auto;
   padding: 15px 20px;
@@ -125,33 +135,13 @@ altImage{
   border-radius: 8px;
   box-shadow: 0px 10px 15px 5px rgb(0, 0, 0);
 
-
+}
 
   
 
-  
-}
-card-id-1{
-background-color: silver;
 
-}
 
-#form_area {
-  text-align: center;
-  flex-wrap: center;
-  color: white;  
-  padding: 70px 0px;
-  margin: auto;
-  cursor: pointer;
-  border: solid;
-  border-color: rgba(143, 133, 76, 0.829);
-  border-radius: 4px;
-  font-family: luminari, fantasy;
-  font-size: 19px;
-  width: 200px;
-  height: 200px;
-  border:center;
-}
+
 
 
 /* 
@@ -177,6 +167,7 @@ background-color: silver;
 } */
 
 #form_area {
+  
   text-align: center;
   flex-wrap: center;
   color: white;  
@@ -184,7 +175,7 @@ background-color: silver;
   margin: auto;
   cursor: pointer;
   border: solid;
-  border-color: rgba(143, 133, 76, 0.829);
+  border-color: rgba(248, 248, 246, 0.829);
   border-radius: 4px;
   font-family: luminari, fantasy;
   font-size: 19px;

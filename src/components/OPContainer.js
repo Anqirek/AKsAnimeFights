@@ -38,23 +38,7 @@ const cardsMap = cards.map((card) => {
     
 })
 
-// const ChooseCard = cards.filter((card) => {
 
-//   <OPCharacterInfo
-
-//   key = {card.id}
-//   quote = {card.quote}
-//   altImage = {card.altimage}
-//   bio = {card.bio}
-//   weapon = {card.weapon}
-//   episode = {card.episode}
-
-  
-//   />
-
-
-
-// })
 
 
 
