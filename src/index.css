@@ -1,6 +1,6 @@
 body {
 
-  background-image: url();
+
   background-size: auto;
   background: rgb(34,33,37);
   background: radial-gradient(circle, rgba(34,33,37,1) 0%, rgba(212,12,48,1) 35%, rgba(11,20,22,1) 100%);  background-repeat: repeat;
@@ -202,5 +202,5 @@ background-color: silver;
   font-family: fantasy, bold;
   font-size: 16px;
   box-shadow: 0 10px 15px 0 rgb(241, 235, 235); 
-}     
+}     */
    

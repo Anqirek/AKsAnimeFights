@@ -7,7 +7,7 @@ function OPCharacterInfo({bio, weapon, altImage, episode}) {
 
     return (
 
-    <>
+   <>
  <div className="container-character" >
   <li> 
     <img src = {altImage} alt = "loading..." />   

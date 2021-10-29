@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import OPCard from "./OPCard";
-import OPCharacterInfo from './OPCharacterInfo'
+// import OPCharacterInfo from './OPCharacterInfo'
+// import {Route} from 'react-router-dom'
 
-function OPContainer({setSelectChar}) {
+function OPContainer() {
 
 const [cards, setCards] = useState([])
 
@@ -18,11 +19,8 @@ fetch('http://localhost:3000/OP-Characters')
 
 }
 
-const filterChar = cards.filter(card => {
-  return setSelectChar(card)})
 
-
-const cardsMap = filterChar.map((card) => { 
+const cardsMap = cards.map((card) => {
 
     return <OPCard 
      key = {card.id} 
@@ -40,6 +38,23 @@ const cardsMap = filterChar.map((card) => {
     
 })
 
+// const ChooseCard = cards.filter((card) => {
+
+//   <OPCharacterInfo
+
+//   key = {card.id}
+//   quote = {card.quote}
+//   altImage = {card.altimage}
+//   bio = {card.bio}
+//   weapon = {card.weapon}
+//   episode = {card.episode}
+
+  
+//   />
+
+
+
+// })
 
 
 

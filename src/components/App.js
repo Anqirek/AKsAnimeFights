@@ -1,34 +1,33 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Header from './Header'
 // import NewOPForm from './NewOPForm'
 import OPContainer from './OPContainer'
 import OPCard from './OPCard'
-import OPCharacterInfo from './OPCharacterInfo';
 import {Switch, Route} from 'react-router-dom'
+import OPCharacterInfo from './OPCharacterInfo';
 
 
 
 function App() {
 
-  const [selectChar, setSelectChar] = useState([])
+  // const [selectChar, setSelectChar] = useState([])
 
 
   return (
 
     <div className = "App">
       <Switch>
-        <Route path = "/OPContainer">
-          <OPContainer setSelectChar = {setSelectChar}/>
+        <Route exact path = "/OPContainer">
+          <OPContainer />
         </Route>
-
-        <Route path = "/OPCard">
+        <Route path = "./OPCharacterInfo">
+          <OPCharacterInfo />
+        </Route>
+        <Route exact path = "/OPCard">
           <OPCard  />
         </Route>
         <Route exact path = "/">
           <Header />
-        </Route>
-        <Route path = "/OPCharacterInfo">
-        <OPCharacterInfo selectChar = {selectChar} />
         </Route>
         <Route path = "*">
           <h1>
