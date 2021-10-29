@@ -1,26 +1,11 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import OPCard from "./OPCard";
-// import OPCharacterInfo from './OPCharacterInfo'
-// import {Route} from 'react-router-dom'
+import OPCharacterInfo from './OPCharacterInfo'
 
-function OPContainer() {
+function OPContainer({cards}) {
+console.log(cards)
 
-const [cards, setCards] = useState([])
-
-
-useEffect(getOpCards, [])
-
-function getOpCards() {
-
-fetch('http://localhost:3000/OP-Characters')
-.then(res => res.json())
-.then(setCards)
- 
-
-}
-
-
-const cardsMap = cards.map((card) => {
+const cardsMap = cards.map((card) => { 
 
     return <OPCard 
      key = {card.id} 
@@ -32,12 +17,8 @@ const cardsMap = cards.map((card) => {
      bio = {card.bio}
      weapon = {card.weapon}
      episode = {card.episode}
-     
-     
      /> 
-    
 })
-
 
 
 

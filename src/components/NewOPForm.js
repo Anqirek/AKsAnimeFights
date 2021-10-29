@@ -1,24 +1,72 @@
+import React,{useEffect,useState} from 'react'
 
-// import React,{useEffect,useState} from 'react'
 
-
-function NewOPForm({handleChange, handleForm, formData}){
+function NewOPForm({updateCards}){
   
-  // useEffect(() => {
-  //     return () => console.log('form removed')
-  // },[])
+  useEffect(() => {
+    return () => console.log('form removed')
+  },[])
 
-// const [newChar, setNewChar] = useState("")
+const [newChar, setNewChar] = useState("")
+const [formData, setFormData] = useState({
+  name:'',
+  image:'',
+  age:'',
+  weapon:'',
+  episode:'',
+  quote:'',
+  age:''
+  })
+  useEffect(() => {
+    console.log(formData)
+  },[formData])
+  
+  const handleChange = (e) => {
+      console.log(e.target.name)
+      console.log(e.target.value)
+      setFormData({...formData, [e.target.name]:e.target.value})
+  }
+  
 
 
-
+ function onSubmit(e){
+   e.preventDefault()
+  console.log("submitting form...");
+  const newOP = {
+    name:formData.name,
+    image:formData.image,
+    age:formData.age,
+    weapon:formData.weapon,
+    episode:formData.episode,
     
+  }
+  console.log(newOP)
+  fetch('http://localhost:3000/OP-Characters',{
+        method:'POST',
+        headers: {
+          'Content-Type':'application/json',
+        },
+        body: JSON.stringify(newOP)
+      })
+      .then(res => res.json())
+      .then(data => {
+        updateCards(data)
+        setFormData({  
+          name:'',
+          image:'',
+          age:'',
+          weapon:'',
+          episode:'',
+          
+          })
+      })
+}
 
 
 return  (
   <>
  
-    <form style={{display:"flex", flexDirection:"grid"}}>
+    <form onSubmit={onSubmit} style={{display:"flex", flexDirection:"grid"}}>
       <lablel>New OP Character</lablel>
       <br></br>
       <input
