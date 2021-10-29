@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import OPCard from "./OPCard";
 import OPCharacterInfo from './OPCharacterInfo'
 
-function OPContainer({setSelectChar}) {
+function OPContainer() {
 
 const [cards, setCards] = useState([])
 
@@ -18,11 +18,9 @@ fetch('http://localhost:3000/OP-Characters')
 
 }
 
-const filterChar = cards.filter(card => {
-  return setSelectChar(card)})
 
 
-const cardsMap = filterChar.map((card) => { 
+const cardsMap = cards.map((card) => { 
 
     return <OPCard 
      key = {card.id} 
