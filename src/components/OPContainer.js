@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import OPCard from "./OPCard";
-import OPCharacterInfo from './OPCharacterInfo'
+
 
 function OPContainer({cards}) {
-console.log(cards)
 
 const cardsMap = cards.map((card) => { 
 
@@ -13,7 +12,7 @@ const cardsMap = cards.map((card) => {
      name = {card.name}
      image = {card.image}
      quote = {card.quote}
-     altImage = {card.altimage}
+     altimage = {card.altimage}
      bio = {card.bio}
      weapon = {card.weapon}
      episode = {card.episode}
