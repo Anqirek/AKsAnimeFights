@@ -55,13 +55,13 @@ form {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDAqWjFDtO58MXnINfe9M--fKCI1_67cufQQ&usqp=CAU");
   border: 5px outset #0c0c0a; ;
   color: rgb(241, 241, 231);
-  text-align: center;
-  flex-wrap: center;
+  text-align: wrap;
+  flex-wrap: wrap;
   color: white;  
   padding: 7px 0px;
   margin: auto;
   border: 5px outset #49493a; ;
-  word-break: 5px;
+  word-break: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 15px;
   
@@ -133,16 +133,11 @@ altImage{
   border-radius: 8px;
   box-shadow: 0px 10px 15px 5px rgb(0, 0, 0);
 
-
+}
 
   
 
-  
-}
-card-id-1{
-background-color: silver;
 
-}
 
 
 

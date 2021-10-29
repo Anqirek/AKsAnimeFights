@@ -2,21 +2,25 @@
 import React,{useEffect,useState} from 'react'
 
 
-function NewOPForm({handleChange, handleForm, formData,handleSubmit}){
-
+function NewOPForm({handleChange, handleForm, formData}){
+  
+  // useEffect(() => {
+  //     return () => console.log('form removed')
+  // },[])
 
 const [newChar, setNewChar] = useState("")
 
 
 
-
     
-  
+
 
 return  (
   <>
-    <form onSubmit={handleSubmit}>
+ 
+    <form style={{display:"flex", flexDirection:"grid"}}>
       <lablel>New OP Character</lablel>
+      <br></br>
       <input
       type="text"
       name="name"
@@ -24,7 +28,9 @@ return  (
       onChange={handleChange}
       >
       </input>
+      <br></br>
       <label>Image</label>
+      <br></br>
        <input
        type="text"
        name="image"
@@ -32,7 +38,9 @@ return  (
        onChange={handleChange}
        >
       </input>
+      <br></br>
       <label>Age</label>
+      <br></br>
        <input
        type="text"
        name="age"
@@ -40,7 +48,9 @@ return  (
        onChange={handleChange}
        >
       </input>
+      <br></br>
       <label>Weapon</label>
+      <br></br>
        <input
        type="text"
        name="weapon"
@@ -48,7 +58,9 @@ return  (
        onChange={handleChange}
        >
       </input>
+      <br></br>
       <label>Episode</label>
+      <br></br>
        <input
        type="text"
        name="episode"
@@ -56,6 +68,9 @@ return  (
        onChange={handleChange}
        >
       </input>
+      <br></br>
+      
+      <button>Submit</button>
 
     </form>
 
