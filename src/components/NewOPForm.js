@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react'
 
 
-function NewOPForm({onSubmit}){
+function NewOPForm({updateCards}){
   
   useEffect(() => {
     return () => console.log('form removed')
@@ -50,7 +50,7 @@ const [formData, setFormData] = useState({
       })
       .then(res => res.json())
       .then(data => {
-        onSubmit(data)
+        updateCards(data)
         setFormData({  
           name:'',
           image:'',

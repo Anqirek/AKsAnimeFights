@@ -10,8 +10,8 @@ import {Switch, Route} from 'react-router-dom'
 
 function App() {
 
-  const [selectChar, setSelectChar] = useState([])
-  const [cards, setCards] = useState([])
+  
+const [cards, setCards] = useState([])
 
 useEffect(getOpCards, [])
 
@@ -28,21 +28,24 @@ fetch('http://localhost:3000/OP-Characters')
 
    console.log(cards)
 
+
+
   return (
 
     <div className = "App">
 
-        <Switch>
-        <Route path = "/OPContainer">
-          <OPContainer cards={cards} setCards={setCards}/>
+        <Header />
+  
+        <NewOPForm updateCards={onSubmit} />
+       
+        <Switch> 
+         <Route path="/OPContainer">
+        <OPContainer cards={cards} />
         </Route>
         <Route path = "/OPCard">
           <OPCard  />
         </Route>
-        <Route exact path = "/">
-        <NewOPForm onSubmit={onSubmit} />
-          <Header />
-        </Route>
+       
         <Route path = "/OPCharacterInfo">
         <OPCharacterInfo />
         </Route>
