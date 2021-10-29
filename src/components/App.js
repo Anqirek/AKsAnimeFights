@@ -11,26 +11,22 @@ import {Switch, Route} from 'react-router-dom'
 function App() {
 
   const [selectChar, setSelectChar] = useState([])
-  const [formData, setFormData] = useState({
-    name:'',
-    image:'',
-    age:'',
-    weapon:'',
-    episode:'',
-    quote:'',
-    age:''
-    })
-    useEffect(() => {
-      console.log(formData)
-    },[formData])
-    
-    const handleChange = (e) => {
-        console.log(e.target.name)
-        console.log(e.target.value)
-        setFormData({...formData, [e.target.name]:e.target.value})
-    }
-    
-   
+  const [cards, setCards] = useState([])
+
+useEffect(getOpCards, [])
+
+function getOpCards() {
+fetch('http://localhost:3000/OP-Characters')
+.then(res => res.json())
+.then(data=>setCards(data))
+}
+
+ function onSubmit(newOP) {
+   setCards ([newOP,...cards])
+
+ }
+
+   console.log(cards)
 
   return (
 
@@ -38,14 +34,13 @@ function App() {
 
         <Switch>
         <Route path = "/OPContainer">
-          <OPContainer/>
+          <OPContainer cards={cards} setCards={setCards}/>
         </Route>
-
         <Route path = "/OPCard">
           <OPCard  />
         </Route>
         <Route exact path = "/">
-        <NewOPForm formData={formData} handleChange={handleChange}/>
+        <NewOPForm onSubmit={onSubmit} />
           <Header />
         </Route>
         <Route path = "/OPCharacterInfo">

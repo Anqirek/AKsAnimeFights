@@ -2,41 +2,22 @@ import { useState, useEffect } from "react";
 import OPCard from "./OPCard";
 import OPCharacterInfo from './OPCharacterInfo'
 
-function OPContainer() {
+function OPContainer(props) {
+console.log(props)
+// const cardsMap = cards.map((card) => { 
 
-const [cards, setCards] = useState([])
-
-
-useEffect(getOpCards, [])
-
-function getOpCards() {
-
-fetch('http://localhost:3000/OP-Characters')
-.then(res => res.json())
-.then(setCards)
- 
-
-}
-
-
-
-const cardsMap = cards.map((card) => { 
-
-    return <OPCard 
-     key = {card.id} 
-     card = {card} 
-     name = {card.name}
-     image = {card.image}
-     quote = {card.quote}
-     altImage = {card.altimage}
-     bio = {card.bio}
-     weapon = {card.weapon}
-     episode = {card.episode}
-     
-     
-     /> 
-    
-})
+//     return <OPCard 
+//      key = {card.id} 
+//      card = {card} 
+//      name = {card.name}
+//      image = {card.image}
+//      quote = {card.quote}
+//      altImage = {card.altimage}
+//      bio = {card.bio}
+//      weapon = {card.weapon}
+//      episode = {card.episode}
+//      /> 
+// })
 
 
 
@@ -44,7 +25,7 @@ const cardsMap = cards.map((card) => {
 return (
     <>
     
-    <ul className="cards">{cardsMap}</ul>
+    {/* <ul className="cards">{cardsMap}</ul> */}
 
    
   </>

@@ -1,37 +1,57 @@
 import React,{useEffect,useState} from 'react'
 
 
-function NewOPForm({handleChange, handleForm, formData}){
+function NewOPForm({onSubmit}){
   
   useEffect(() => {
-      return () => console.log('form removed')
+    return () => console.log('form removed')
   },[])
 
 const [newChar, setNewChar] = useState("")
+const [formData, setFormData] = useState({
+  name:'',
+  image:'',
+  age:'',
+  weapon:'',
+  episode:'',
+  quote:'',
+  age:''
+  })
+  useEffect(() => {
+    console.log(formData)
+  },[formData])
+  
+  const handleChange = (e) => {
+      console.log(e.target.name)
+      console.log(e.target.value)
+      setFormData({...formData, [e.target.name]:e.target.value})
+  }
+  
 
 
  function onSubmit(e){
    e.preventDefault()
   console.log("submitting form...");
   const newOP = {
-    name:newChar.name,
-    image:newChar.image,
-    age:newChar.age,
-    weapon:newChar.weapon,
-    episode:newChar.episode,
+    name:formData.name,
+    image:formData.image,
+    age:formData.age,
+    weapon:formData.weapon,
+    episode:formData.episode,
     
   }
+  console.log(newOP)
   fetch('http://localhost:3000/OP-Characters',{
         method:'POST',
         headers: {
           'Content-Type':'application/json',
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(newOP)
       })
       .then(res => res.json())
       .then(data => {
-        setNewChar([data, ...setNewChar])
-        setNewChar({  
+        onSubmit(data)
+        setFormData({  
           name:'',
           image:'',
           age:'',
