@@ -1,18 +1,19 @@
-
 import React,{useEffect,useState} from 'react'
 
 
 function NewOPForm({handleChange, handleForm, formData}){
   
-  // useEffect(() => {
-  //     return () => console.log('form removed')
-  // },[])
+  useEffect(() => {
+      return () => console.log('form removed')
+  },[])
 
 const [newChar, setNewChar] = useState("")
 
 
-
-    
+{/* <NewOPForm onSubmit={() => {
+  console.log("submitting form...");
+}}/>
+     */}
 
 
 return  (

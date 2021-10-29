@@ -29,7 +29,7 @@ function App() {
         console.log(e.target.value)
         setFormData({...formData, [e.target.name]:e.target.value})
     }
-    const handleAddCake = (e) => {
+    const handleSubmit = (e) => {
       e.preventDefault()
       fetch('http://localhost:3000/OP-Characters',{
         method:'POST',
@@ -68,9 +68,7 @@ function App() {
         <Route exact path = "/">
         <NewOPForm formData={formData} handleChange={handleChange}/>
           <Header />
-          
         </Route>
-        
         <Route path = "/OPCharacterInfo">
         <OPCharacterInfo />
         </Route>
