@@ -10,16 +10,43 @@ function NewOPForm({handleChange, handleForm, formData}){
 const [newChar, setNewChar] = useState("")
 
 
-{/* <NewOPForm onSubmit={() => {
+ function onSubmit(e){
+   e.preventDefault()
   console.log("submitting form...");
-}}/>
-     */}
+  const newOP = {
+    name:newChar.name,
+    image:newChar.image,
+    age:newChar.age,
+    weapon:newChar.weapon,
+    episode:newChar.episode,
+    
+  }
+  fetch('http://localhost:3000/OP-Characters',{
+        method:'POST',
+        headers: {
+          'Content-Type':'application/json',
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(res => res.json())
+      .then(data => {
+        setNewChar([data, ...setNewChar])
+        setNewChar({  
+          name:'',
+          image:'',
+          age:'',
+          weapon:'',
+          episode:'',
+          
+          })
+      })
+}
 
 
 return  (
   <>
  
-    <form style={{display:"flex", flexDirection:"grid"}}>
+    <form onSubmit={onSubmit} style={{display:"flex", flexDirection:"grid"}}>
       <lablel>New OP Character</lablel>
       <br></br>
       <input

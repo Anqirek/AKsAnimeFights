@@ -29,28 +29,7 @@ function App() {
         console.log(e.target.value)
         setFormData({...formData, [e.target.name]:e.target.value})
     }
-    const handleSubmit = (e) => {
-      e.preventDefault()
-      fetch('http://localhost:3000/OP-Characters',{
-        method:'POST',
-        headers: {
-          'Content-Type':'application/json',
-        },
-        body: JSON.stringify(formData)
-      })
-      .then(res => res.json())
-      .then(data => {
-        setSelectChar([data, ...selectChar])
-        setFormData({  
-          name:'',
-          image:'',
-          age:'',
-          weapon:'',
-          episode:'',
-          quote:'',
-          age:''})
-      })
-    }
+    
    
 
   return (
