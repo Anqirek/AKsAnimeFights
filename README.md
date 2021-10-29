@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# AK's OP Anime Fights
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Who has the best OP fighting skills of them all? Well on this site we will show you how OP our favorite anime characters can be. From seeing thier best quote, to finding out how old are they really, and which weapons they use when distroying thier enemys. 
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## What does it do?
 
-### `npm start`
+This website allows you to veiw details about anime OP characters so that you can find out more information regarding each character. You will also be able to add your own OP character so that others can learn more about them.  
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Why did we do it?
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+We elected to go with OP Anime as we were all fans of Anime and enjoy the fights that they are often placed in. This is most apparent in the styling and design of the webpage layout.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Technologies and Languages Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For this project, we used a plethora of technologies to bring together the whole package. The techonology stack used for this project was:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `JavaScript`
+   - Allowed for setting the `onOnclick` and `submit` on the page, and brought actual functionality and interactivity to the project. This is also how we were able to make our request to the local server to both render current creatures and also add/update OP Characters within the database. Using JS, we achieved certain milestones of the CRUD method.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `HTML`
+   - Allowed us to set the basic skeleton of the page. This is also where we set the body of the form to allow for OP Charcter submissions. Having a clean, concise layout at this stage sets the foundation for the rest of the project and how it will allow flow for the user.
 
-### `npm run eject`
+- `CSS` 
+   - This is how we set the theme and feel for the enitre page. Using CSS, we could link an amazing backround as well as set the style and image for the cards that each creature is rendered on. `CSS` also allowed us to select and set the fonts seen through the entire page. In a extremely boiled down statement: `CSS` allowed us to set the "feel" for the enitre page and project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- `Json Server`
+   - Using `Json Server` allowed us to locally create and run a database. Every creature is added as an object, and then renders down into its own "card" via the GET request. As long as the server is running, every creature present will render and populate on the page.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `Markdown`
+   - This technology is how we were able to create this `README.md`! Using the baked in syntax within `Markdown`, we styled and formatted the layout and information to present it in a clean and thoughtful way. The syntax used within were: `Headings`, `Horizontal Rule`, `Unordered List`, `Bold` and `Code`.
+   - `React`
+    -Using react dom routes we were able to keep our code clean and orginzed as we worked through the process. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Conclusion
 
-## Learn More
+As a whole, this project was a great introduction to what can be expected as we move forward in our professional careers and start working on different projects and repos. It also provided valuable, personal insights to:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Project Design
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Project Layout
 
-### Code Splitting
+- Time Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Conflict Resolution
 
-### Analyzing the Bundle Size
+- Teamwork
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Collaboration
 
-### Making a Progressive Web App
+- Troubleshooting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Project Daily Goals
 
-### Advanced Configuration
+- Self lead Stand Ups and Stand Downs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Community
 
-### Deployment
+These lessons and concepts form the foundation of everything that is to come in out Software Engineering journey. As time goes on, we will continue to strgenthen and reinforce this foundation, and build upon it new skills and techonologies to achieve even more ambitious goals.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Team Members 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Kayle Davis
+
+Email: kayledavis89@gmail.com
+
+Insta: [kayletroester](https://www.instagram.com/kayletroester/)
+
+GitHub: https://github.com/Kayled
+
+LinkedIn: https://www.linkedin.com/in/kayle-davis-3b31a1123
+
+### Anthony Hill 
+
+Email: HillGAnthony@outlook.com
+
+Instagram: nappinant
+
+Github name: Anqirek
+
+
