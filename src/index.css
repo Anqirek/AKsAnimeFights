@@ -1,4 +1,19 @@
 body {
+  background-size: auto;
+  background: rgb(34,33,37);
+  background: radial-gradient(circle, rgba(34,33,37,1) 0%, rgba(212,12,48,1) 35%, rgba(11,20,22,1) 100%);  background-repeat: repeat;
+  margin-left: 150px;
+  margin-right: 100px;
+  padding: auto;
+}
+
+header {
+  color: rgb(241, 241, 231);  
+  padding: 20px 20px;
+  margin: 8px 8px;
+  /* margin-left: 15px; */
+  border: 5px outset #0c0c0a; ;
+
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDAqWjFDtO58MXnINfe9M--fKCI1_67cufQQ&usqp=CAU");
   background-size: auto;
   background-repeat: repeat;
@@ -9,14 +24,19 @@ header {
   color: rgba(241, 241, 231, 0.801);  
   padding: 14px 20px;
   margin: 8px 8px;
-  /* margin-left: 15px; */
+  margin-left: 15px;
   border: 5px outset #49493a; ;
+
   border-radius: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 25px;
   word-spacing: 15px;
   text-align: center;
-  box-shadow: 0px 10px 15px 0px rgb(189, 175, 175);
+
+  box-shadow: 0px 10px 15px 0px rgb(248, 244, 244);
+
+  
+
 }
 
 
@@ -31,7 +51,32 @@ img {
   box-shadow: 0px 10px 15px 5px rgb(0, 0, 0);
 }
 
+form {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDAqWjFDtO58MXnINfe9M--fKCI1_67cufQQ&usqp=CAU");
+  border: 5px outset #0c0c0a; ;
+  color: rgb(241, 241, 231);
+  text-align: wrap;
+  flex-wrap: wrap;
+  color: white;  
+  padding: 7px 0px;
+  margin: auto;
+  border: 5px outset #49493a; ;
+  word-break: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
+  
+  text-align: center;
+ 
+}
  .card {
+
+  background-color:grey;
+  background-repeat: no-repeat;
+  background-size:400px 500px ;
+  border: 5px outset #131312; 
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0px 10px 20px 0px rgb(243, 238, 238);
   background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBm0twMPC4yG8LL6N2HgJAdvUQjL_IsE0QNA&usqp=CAU");
   background-blend-mode: saturation;
   background-repeat: no-repeat;
@@ -45,7 +90,29 @@ img {
   float: left;
   text-align: center;
   width: 300px;
-  height: 380px;
+  height: 420px;
+  text-emphasis: bold;
+  margin: 20px 20px;
+  padding: 10px 20px;
+  margin-left: auto;
+  padding: 15px 20px;
+  margin: 15px 15px;
+  list-style-type: none;
+  color:white;
+  align-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+ 
+
+  
+}
+.container-character{
+  display: center;
+  justify-content: wrap;
+  float: fixed;
+  text-align: center;
+  width: 300px;
+  height: 400px;
   text-emphasis: bold;
   margin-left: auto;
   padding: 15px 20px;
@@ -54,17 +121,27 @@ img {
   color:white;
   align-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
   
+}
+altImage{
+  margin: center;
+  height: 200px;
+  width: 200px;
+  border: solid;
+  border-color: black;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px 5px rgb(0, 0, 0);
+
+}
 
   
-}
-card-id-1{
-background-color: silver;
-}
 
-.cards:hover {
-  box-shadow: 0 8px 16px 0 (219, 48, 48, 0.685);
-}
+
+
+
+
+
 /* 
 .anim{
   -webkit-animation: myfirst 1s;
@@ -87,7 +164,8 @@ background-color: silver;
   overflow-wrap: center;
 } */
 
-/* #form_area {
+#form_area {
+  
   text-align: center;
   flex-wrap: center;
   color: white;  
@@ -95,23 +173,12 @@ background-color: silver;
   margin: auto;
   cursor: pointer;
   border: solid;
-  border-color: rgba(143, 133, 76, 0.829);
+  border-color: rgba(248, 248, 246, 0.829);
   border-radius: 4px;
   font-family: luminari, fantasy;
   font-size: 19px;
   width: 200px;
   height: 200px;
   border:center;
-} */
+}
 
-/* #submit {
-  background-image: url("");
-  border-radius: 15px;
-  padding: 10px;
-  background-color: rgba(228, 218, 195, 0.842);
-  border: 10px, black,outset;
-  font-family: fantasy, bold;
-  font-size: 16px;
-  box-shadow: 0 10px 15px 0 rgb(241, 235, 235); 
-}     
-   */
